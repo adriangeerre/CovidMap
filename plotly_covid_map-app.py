@@ -61,8 +61,8 @@ def plot_covid(data, indic, scope, height, widht, transition_time, frame_time):
 			scope=scope)
 
 	fig.update_layout(autosize=False, height=height, width=width)
-	#fig.layout.updatemenus[0].buttons[0].args[1]['frame']['duration'] = frame_time
-	#fig.layout.updatemenus[0].buttons[0].args[1]['transition']['duration'] = transition_time
+	fig.layout.updatemenus[0].buttons[0].args[1]['frame']['duration'] = frame_time
+	fig.layout.updatemenus[0].buttons[0].args[1]['transition']['duration'] = transition_time
 
 	st.write(fig)
 
